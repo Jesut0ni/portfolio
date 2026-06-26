@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { profile } from "@/lib/content";
 import "./globals.css";
 
@@ -16,23 +17,25 @@ const display = Poppins({
   display: "swap",
 });
 
+const SITE_URL = "https://jesutoniomiye.vercel.app";
+const TITLE = "Jesutoni Omiye — Product Manager & Founder";
+const DESCRIPTION =
+  "Product manager and founder building AI products people love to use. Creator of Plainly, with experience across health tech, insurance, and fintech.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jesutoni.com"),
-  title: "Jesutoni Omiye — Product, Founder, Builder",
-  description:
-    "Product Manager at Curacel (YC22) and founder of JEAY Healthcare. Building Plainly and open infrastructure for AI agents.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
   openGraph: {
-    title: "Jesutoni Omiye — Product, Founder, Builder",
-    description:
-      "I build products that hand people the keys to systems built to lock them out.",
+    title: TITLE,
+    description: DESCRIPTION,
     type: "website",
-    url: "https://jesutoni.com",
+    url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jesutoni Omiye — Product, Founder, Builder",
-    description:
-      "I build products that hand people the keys to systems built to lock them out.",
+    title: TITLE,
+    description: DESCRIPTION,
     creator: "@Jesut0ni",
   },
 };
@@ -43,11 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${display.variable}`}
-    >
-      <body>{children}</body>
+    <html lang="en" className={`${inter.variable} ${display.variable}`}>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
