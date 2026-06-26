@@ -2,7 +2,7 @@
 
 My personal site. It's where I send recruiters, collaborators, and anyone who wants to see what I've built and how I think about product.
 
-Live at https://portfolio-nine-lime-95.vercel.app
+Live at https://jesutoniomiye.vercel.app
 
 Built with Next.js and Tailwind. No UI libraries, no template, just a handful of components and one content file.
 
