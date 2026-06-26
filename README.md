@@ -12,7 +12,7 @@ npm run build    # production build (fully static)
 
 ## Edit the content
 
-Everything you'd change lives in **`lib/content.ts`** — profile, headline,
+Everything changed lives in **`lib/content.ts`** — profile, headline,
 projects, experience, press. No need to touch the components.
 
 The one accent color is the CSS variable `--accent` in **`app/globals.css`**
