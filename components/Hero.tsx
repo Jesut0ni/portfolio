@@ -117,8 +117,8 @@ export function Hero() {
         style={{ animationDelay: "0.42s" }}
       >
         {stats.map((s) => (
-          <div key={s.label} className="px-3">
-            <dt className="font-serif text-3xl font-extrabold text-ink md:text-4xl">
+          <div key={s.label} className="px-2 sm:px-3">
+            <dt className="font-serif text-xl font-extrabold tracking-tight text-ink sm:text-3xl md:text-4xl">
               {s.value}
             </dt>
             <dd className="mt-1 text-xs leading-snug text-muted sm:text-sm">
