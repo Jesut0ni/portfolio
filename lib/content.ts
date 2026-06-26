@@ -188,6 +188,11 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    outlet: "Medium",
+    title: "AI agents have a permissions problem. I built AgentGate to fix it.",
+    href: "https://medium.com/@jesutoniomiye/ai-agents-have-a-permissions-problem-i-built-agentgate-to-fix-it-45752f3734ed",
+  },
+  {
     outlet: "Techpoint Africa",
     title: "Nigerian JEAY is making healthcare accessible and affordable",
     href: "https://techpoint.africa/2023/02/20/jeay-affordable-accessible-healthcare-nigeria/",
