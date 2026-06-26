@@ -15,7 +15,6 @@
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-mono), ui-monospace, "SF Mono", monospace;
 }
 
 :root {
@@ -50,28 +49,7 @@ body::before {
   color: var(--color-paper);
 }
 
-/* Mono label — used for section markers and metadata */
-.label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-}
-
-/* Link with an underline that grows from the left on hover */
-.link-underline {
-  background-image: linear-gradient(var(--color-accent), var(--color-accent));
-  background-size: 0% 1.5px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.35s cubic-bezier(0.2, 0.7, 0.3, 1);
-}
-.link-underline:hover {
-  background-size: 100% 1.5px;
-}
-
-/* Entrance animation — gentle rise + fade, staggered via inline delay */
+/* Entrance animation: gentle rise + fade, staggered via inline delay */
 @keyframes rise {
   from {
     opacity: 0;

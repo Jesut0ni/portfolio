@@ -3,10 +3,7 @@
 
 export const profile = {
   name: "Jesutoni Omiye",
-  firstName: "Jesutoni",
-  role: "Product Manager & Founder",
   location: "Lagos, Nigeria",
-  available: "Open to founding and product roles",
   photo: "/jesutoni.jpg",
   photoAbout: "/jesutoni-hero.jpg",
   // Friendly greeting line above the headline.
@@ -84,7 +81,6 @@ export const skillGroups: SkillGroup[] = [
 export type Project = {
   index: string;
   name: string;
-  year: string;
   tagline: string;
   blurb: string;
   role: string;
@@ -96,9 +92,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     index: "01",
-    name: "Plainly",
-    year: "2026",
-    tagline: "AI for Nigeria's most confusing documents",
+    name: "Plainly",    tagline: "AI for Nigeria's most confusing documents",
     blurb:
       "Upload a lease, a payslip, or an HMO plan and get plain English back, with red flags and clear next steps. It knows Nigerian rules and pricing tricks, so the advice actually fits. My latest AI build, shipping in the open.",
     role: "Founder",
@@ -108,9 +102,7 @@ export const projects: Project[] = [
   },
   {
     index: "02",
-    name: "JEAY Healthcare",
-    year: "2022",
-    tagline: "Telemedicine for young Nigerians",
+    name: "JEAY Healthcare",    tagline: "Telemedicine for young Nigerians",
     blurb:
       "A telemedicine platform that connects young Nigerians to affordable doctors. Patients consult over video, audio, or chat for primary care, mental health, and reproductive health, then get medication delivered and lab tests done at home. We launched in six weeks and grew past 3,000 users across three states.",
     role: "Co-Founder & Product Manager",
@@ -120,9 +112,7 @@ export const projects: Project[] = [
   },
   {
     index: "03",
-    name: "AgentGate",
-    year: "2026",
-    tagline: "OAuth for AI agents",
+    name: "AgentGate",    tagline: "OAuth for AI agents",
     blurb:
       "AgentGate lets developers control exactly what an AI agent is allowed to do. It grants scoped permissions, asks the user to approve sensitive actions, logs every call for auditing, and revokes access instantly, so teams can deploy agents without losing control. Open source.",
     role: "Creator",
@@ -132,9 +122,7 @@ export const projects: Project[] = [
   },
   {
     index: "04",
-    name: "agent-tools",
-    year: "2026",
-    tagline: "An open registry of tools for AI agents",
+    name: "agent-tools",    tagline: "An open registry of tools for AI agents",
     blurb:
       "An open registry where developers publish typed, agent-callable tools, and AI agents discover and invoke them through one MCP-native endpoint. It's the companion to AgentGate: one decides what an agent may call, the other is the catalogue of what's callable.",
     role: "Creator",
