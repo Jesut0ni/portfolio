@@ -122,7 +122,7 @@ export const projects: Project[] = [
   },
   {
     index: "04",
-    name: "agent-tools",    tagline: "An open registry of tools for AI agents",
+    name: "Agent-tools",    tagline: "An open registry of tools for AI agents",
     blurb:
       "An open registry where developers publish typed, agent-callable tools, and AI agents discover and invoke them through one MCP-native endpoint. It's the companion to AgentGate: one decides what an agent may call, the other is the catalogue of what's callable.",
     role: "Creator",
@@ -179,6 +179,12 @@ export const articles: Article[] = [
     outlet: "Medium",
     title: "AI agents have a permissions problem. I built AgentGate to fix it.",
     href: "https://medium.com/@jesutoniomiye/ai-agents-have-a-permissions-problem-i-built-agentgate-to-fix-it-45752f3734ed",
+  },
+  {
+    outlet: "Medium",
+    title:
+      "AI agents can call any tool. The hard part is finding and trusting them.",
+    href: "https://medium.com/@jesutoniomiye/ai-agents-can-call-any-tool-the-hard-part-is-finding-and-trusting-them-10f0949cacd1",
   },
   {
     outlet: "Techpoint Africa",
